@@ -65,11 +65,7 @@ export default function Editor({ post }: EditorProps) {
     };
   }, [isMounted, initializeEditor]);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<postPatchSchemaType>({
+  const { register, handleSubmit } = useForm<postPatchSchemaType>({
     resolver: zodResolver(postPatchSchema),
   });
 

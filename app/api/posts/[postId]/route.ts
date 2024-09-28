@@ -1,7 +1,6 @@
 import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { postPatchSchema } from "@/lib/validations/post";
-import { PersonStanding } from "lucide-react";
 import { getServerSession } from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
